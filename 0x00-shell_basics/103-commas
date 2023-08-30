@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -A1 | LC_COLLATE=C sort -t$'\0' -k1,1 -k2.1,2n -k2.3 | sed ':a;N;$!ba;s/\n/,/g;s/\(.*\),/\1\n/'
