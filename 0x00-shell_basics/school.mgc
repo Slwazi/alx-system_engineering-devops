@@ -1,2 +1,2 @@
 #!/bin/bash
-dd if=your_school_data_file bs=6 count=1 2>/dev/null | grep -q "^SCHOOL" && echo "School data file" || echo "Not a School data file"
+0       string      SCHOOL  School data file
