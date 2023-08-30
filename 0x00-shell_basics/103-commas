@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1 | LC_COLLATE=C sort -t$'\0' -k1,1 -k2.1,2n -k2.3 | sed ':a;N;$!ba;s/\n/,/g;s/\(.*\),/\1\n/'
+(ls -A1p | LC_ALL=C grep -E '[0-9a-zA-Z]' | LC_ALL=C sort -t $'\n' -k1.1,1.2 -k1.3) | tr '\n' ',' && echo
