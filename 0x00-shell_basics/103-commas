@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1 | LC_COLLATE=C LC_ALL=C sort -t. -k2,2 -k1,1
+ls -xamp
