@@ -1,2 +1,2 @@
 #!/bin/basH
-echo "(Ôo)'"
+echo -e "\xF4\x94o'"
