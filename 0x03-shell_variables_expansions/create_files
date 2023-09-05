@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Define the filenames in an array
+filenames=("0-alias" "fileMbuso" "1-hello_you" "2-path" "3-paths" "4-global_variables" 
+"5-local_variables" "6-create_local_variable" "7-create_global_variable" "8-true_knowledge" "9-divide_and_rule" "10-love_exponent_breath" "11-binary_to_decimal" "12-combinations" "13-print_float")
+
+# Define the text you want to insert into the files
+text_to_insert="#!/bin/bash"
+
+# Loop through the array of filenames and create/populate each file
+for filename in "${filenames[@]}"; do
+    # Use echo to insert the text into the file
+    echo "$text_to_insert" > "$filename"
+done
+
+echo "Files created and text inserted."
